@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USE of INTERNAL and EXTERNAL STYLESHEETS</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <style type="text/css">
+        .vid {
+            font-family: Georgia, serif;
+            font-size: x-large;
+            color: #ff9900;
+            text-align: center;
+        }
+        
+        .ani {
+            font-family: Tahoma, Verdana, sans-serif;
+            font-style: italic;
+            color: red;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: circle;
+            font-family: Georgia, serif;
+            font-size: x-small;
+            color: #ff9900;
+        }
+
+        p {
+            font-size: 20px; /* Changed to px for consistency */
+            text-align: center;
+            font-family: Georgia, serif;
+            color: blue;
+        }
+
+        a:hover {
+            color: #ff0000;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: blue; margin-left: 30px;">Welcome</h1> <!-- Inline style -->
+    
+    <ol style="list-style-type: lower-alpha;">
+        <b>St. Anne’s College of Engineering and Technology</b>
+        <br><br><br>
+        <li>EEE</li>
+        <li>ECE</li>
+        <li>MECH</li>
+        <li>CSE</li>
+    </ol>
+    
+    <p style="font-size: 20pt; color: purple;">Details</p>
+    
+    <p class="ani">St. Anne’s College<br>It is approved by AICTE (All India Council for Technical Education). It is affiliated to Anna University.<br></p>
+    
+    <h2 class="vid">St. Anne’s College of Engineering</h2>
+    
+    <font> <!-- Note: <font> tag is deprecated in HTML5. Consider using CSS for styling -->
+        It is an ISO certified Institution
+    </font>
+    <br><br>
+    
+    <font>
+        <h2>List of Courses Offered</h2>
+    </font>
+    
+    <ul>
+        <li>Computer Science and Engineering</li>
+        <li>ECE</li>
+        <li>MECH</li>
+        <li>EEE</li>
+    </ul>
+    
+    <h3>Results of CSE Students</h3>
+    
+    <table width="100%" cellspacing="2" cellpadding="2" border="1"> <!-- Changed border width -->
+        <tr>
+            <th>S.NAME</th>
+            <th>MARKS</th>
+            <th>RESULT</th>
+        </tr>
+        <tr>
+            <td align="center">Suppriya</td>
+            <td align="center">100</td>
+            <td align="center">Pass</td>
+        </tr>
+        <tr>
+            <td align="center">Devishree</td>
+            <td align="center">99</td>
+            <td align="center">Pass</td>
+        </tr>
+        <tr>
+            <td align="center">Vinayagam</td>
+            <td align="center">98</td>
+            <td align="center">Pass</td>
+        </tr>
+    </table>
+</body>
+</html>
